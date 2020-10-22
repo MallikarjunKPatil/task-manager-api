@@ -1,4 +1,4 @@
-const {fahrenheitToCelsius, celsiusToFahrenheit} = require('../src/math')
+const { fahrenheitToCelsius, celsiusToFahrenheit } = require('../src/math')
 
 test('Should convert 32 F to 0 C', () => {
     const temp = fahrenheitToCelsius(32)

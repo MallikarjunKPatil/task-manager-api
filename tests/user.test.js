@@ -8,7 +8,7 @@ const userOne = {
     password: '56What112!'
 }
 
-beforeEach( async () => {
+beforeEach(async () => {
     await User.deleteMany()
     await new User(userOne).save()
 })
@@ -21,7 +21,7 @@ test('Should signup a new user', async () => {
     }).expect(201)
 })
 
-test('Should login existing user', async () =>{
+test('Should login existing user', async () => {
     await request(app).post('/users/login').send({
         email: userOne.email,
         password: userOne.password
