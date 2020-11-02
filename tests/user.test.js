@@ -27,6 +27,7 @@ test('Should signup a new user', async () => {
 
     // Assertion about plaintext password
     expect(user.password).not.toBe('MyPass')
+    
 })
 
 test('Should login existing user', async () => {
